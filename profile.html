@@ -156,14 +156,37 @@
                               <div class="row">
                                  <!-- profile image -->
                                  <div class="col-lg-12">
+                                    <div>
+                                       <div class="m-auto text-center" id="passport-display">
+                                          <!-- Passport photo will be displayed here -->
+                                       </div>
+                                       <form id="upload-form" enctype="multipart/form-data">
+                                          <div class="profile-img form-group m-auto text-center">
+                                             <label for="passport" class="ps-4">Upload Passport Photo:</label>
+                                             <input type="file" class="form-control-file text-danger" id="passport"
+                                                name="passport">
+                                          </div>
+                                       </form>
+                                    </div>
 
-                                    <div class="profile_img"><img width="150" class="rounded-circle"
-                                          src="images/layout_img/user_img.jpg" alt="User Passport" /></div>
+                                    <style>
+                                       #passport-display img {
+                                          border-radius: 50%;
+                                          width: 100px;
+                                       }
+
+                                       .profile-img {
+                                          width: 39%;
+                                       }
+                                    </style>
+
+                                    <!-- <div class="profile_img"><img width="150" class="rounded-circle"
+                                          src="images/layout_img/user_img.jpg" alt="User Passport" /></div> -->
                                     <div class="profile_contant">
                                        <div class="contact_inner">
 
                                           <!-- form -->
-                                          <form action="#" class="mt-5">
+                                          <form action="#" class="mt-4">
 
                                              <div class="form-row">
                                                 <div class="form-group col-md-6">
@@ -239,6 +262,8 @@
                         </p>
                      </div>
                   </div>
+                  <!-- JS -->
+                  <script src="./index.js"></script>
                   <!-- jQuery -->
                   <script src="js/jquery.min.js"></script>
                   <script src="js/popper.min.js"></script>

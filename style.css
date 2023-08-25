@@ -805,7 +805,7 @@ a:focus {
   height: 1px;
   border-bottom: 1px dashed #ddd;
   margin: 40px 0;
-pur}
+}
 
 i,
 span {
@@ -1190,9 +1190,6 @@ a[data-toggle="collapse"] {
 
 #graph1 {
   margin-top: 10px;
-}
-
-#rebenue {
 }
 
 .graph_revenue {
@@ -1731,7 +1728,7 @@ a[data-toggle="collapse"] {
   min-width: 125px;
   height: auto;
   float: left;
-  background: #1ed085;
+  background: red;
   text-align: center;
   color: #fff;
   padding: 10px 25px;
@@ -2367,9 +2364,6 @@ h2.invoice_head small {
   background-color: #fff;
 }
 
-.table_row tbody {
-}
-
 .table_row tbody tr {
   border: none;
 }
@@ -2598,9 +2592,6 @@ ul.inbox-nav li a i {
   padding-right: 10px;
   position: relative;
   top: 1px;
-}
-
-ul.inbox-nav li a span.label {
 }
 
 ul.labels-info li h4 {
@@ -3129,9 +3120,6 @@ ul.labels-category li p {
   margin: 0;
   font-size: 16px;
   padding: 7px 0;
-}
-
-.bottom_list .left_rating p.ratings a {
 }
 
 .fa.fa-star {
