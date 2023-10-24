@@ -26,20 +26,31 @@ function searchTable() {
 // For passport
 document.getElementById("passport").addEventListener("input", function (event) {
   const fileInput = event.target;
+  const maxFileSizeInBytes = 50 * 1024; // Max size
+  const errorMessage = document.getElementById("error-message");
 
   if (fileInput.files && fileInput.files[0]) {
-    const passportDisplay = document.getElementById("passport-display");
+    const fileSize = fileInput.files[0].size;
 
-    // Create image element
-    const uploadedPassport = document.createElement("img");
-    uploadedPassport.src = URL.createObjectURL(fileInput.files[0]);
-    uploadedPassport.classList.add("img-fluid");
+    if (fileSize > maxFileSizeInBytes) {
+      errorMessage.textContent =
+        "Passport photo size exceeds the maximum allowed size (50KB). Please select a smaller file.";
+      fileInput.value = null;
+    } else {
+      errorMessage.textContent = "";
+      const passportDisplay = document.getElementById("passport-display");
 
-    passportDisplay.innerHTML = "";
-    passportDisplay.appendChild(uploadedPassport);
+      //image element
+      const uploadedPassport = document.createElement("img");
+      uploadedPassport.src = URL.createObjectURL(fileInput.files[0]);
+      uploadedPassport.classList.add("img-fluid");
+
+      passportDisplay.innerHTML = "";
+      passportDisplay.appendChild(uploadedPassport);
+    }
   }
 });
-// Passport End here
+// end of passport
 
 // For signature
 document

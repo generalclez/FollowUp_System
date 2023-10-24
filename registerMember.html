@@ -153,17 +153,18 @@
                      <hr>
 
                      <div class="form-row">
+                        <div class="col-md-12">
 
-                        <div class="col-md-4">
                            <form id="upload-form" enctype="multipart/form-data">
                               <div class="form-group">
                                  <label for="passport">Upload Passport Photo:</label>
+                                 <div id="passport-display">
+                                    <!-- Passport photo will be displayed here -->
+                                 </div>
+                                 <div id="error-message" class="text-danger"></div>
                                  <input type="file" class="form-control-file" id="passport" name="passport">
                               </div>
                            </form>
-                           <div id="passport-display">
-                              <!-- Passport photo will be displayed here -->
-                           </div>
                         </div>
 
                         <style>
@@ -175,24 +176,6 @@
                         </style>
 
 
-                        <div class="col-md-8">
-                           <form id="upload-form" enctype="multipart/form-data">
-                              <div class="form-group">
-                                 <label for="signature">Upload Signature:</label>
-                                 <input type="file" class="form-control-file" id="signature" name="signature">
-                              </div>
-                           </form>
-                           <div id="signature-display">
-                              <!-- Signature will be displayed here -->
-                           </div>
-                        </div>
-
-                        <style>
-                           #signature-display img {
-                              width: 100px;
-                              height: 70px;
-                           }
-                        </style>
 
 
 
